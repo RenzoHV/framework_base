@@ -36,8 +36,7 @@ def main():
            )
 
            cur.execute(
-               "INSERT INTO demodevops.ops_dq_results VALUES (?, current_timestamp(), ?, 
-?, 'underage_count', ?, ?, ?)",
+               "INSERT INTO demodevops.ops_dq_results VALUES (?, current_timestamp(), ?, ?, 'underage_count', ?, ?, ?)",
                (RUN_ID, SILVER_TABLE, "WARN" if underage > 0 else "PASS", float(underage), "age < 18")
            )
 
