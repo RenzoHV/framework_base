@@ -7,7 +7,7 @@ HTTP_PATH = os.environ["DATABRICKS_HTTP_PATH"]
 TOKEN = os.environ["DATABRICKS_TOKEN"]
 
 RUN_ID = os.environ.get("RUN_ID", "manual")
-SILVER_TABLE = os.environ.get("SILVER_TABLE", "demo.silver_customers_v2")
+SILVER_TABLE = os.environ.get("SILVER_TABLE", "demodevops.silver_customers_v2")
 
 def fetch_one(cur, stmt: str):
    cur.execute(stmt)
